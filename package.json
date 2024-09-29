@@ -1,0 +1,32 @@
+{
+  "name": "email-api",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "tsx ./src/index.ts",
+    "build": "tsc",
+    "serve": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.4",
+    "@types/nodemailer": "^6.4.16",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "nodemailer": "^6.9.15",
+    "nodemon": "^3.1.7",
+    "resend": "^4.0.0",
+    "smtp-client": "^0.4.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.1"
+  }
+}
