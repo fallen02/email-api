@@ -9,7 +9,7 @@ export const SendEmails = async (reqData: any ) => {
         const html = `<p>Name: ${reqData.name}</p><p>Email: ${reqData.email}</p><p>Message: ${reqData.message}</p>`
         const { data, error } = await resend.emails.send({
             from: 'admin@fallen02.xyz',
-            to: ['000.sb13@gmail.com'],
+            to: ['mypromofficial@gmail.com'],
             subject: 'New Email from MyPromo',
             text: text,
             html: html
@@ -26,7 +26,7 @@ export const SendOnlyEmails = async (reqData: any ) => {
         const text = `Email: ${reqData.email}\n`
         const html = `<p>Email: ${reqData.email}</p>`
         const { data, error } = await resend.emails.send({
-            from: 'admin@fallen02.xyz',
+            from: 'mypromofficial@gmail.com',
             to: ['000.sb13@gmail.com'],
             subject: 'New Email',
             text: text,
