@@ -26,8 +26,8 @@ export const SendOnlyEmails = async (reqData: any ) => {
         const text = `Email: ${reqData.email}\n`
         const html = `<p>Email: ${reqData.email}</p>`
         const { data, error } = await resend.emails.send({
-            from: 'mypromofficial@gmail.com',
-            to: ['000.sb13@gmail.com'],
+            from: 'admin@fallen02.xyz',
+            to: ['mypromofficial@gmail.com'],
             subject: 'New Email',
             text: text,
             html: html

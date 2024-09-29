@@ -2,6 +2,7 @@ import express,  { type Request, type Response } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import { SendEmails, SendOnlyEmails } from './helpers';
+import { console } from 'inspector';
 dotenv.config();
 
 const app = express();
